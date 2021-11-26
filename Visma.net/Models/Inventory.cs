@@ -145,6 +145,9 @@ namespace ONIT.VismaNetApi.Models
             private set => _supplierDetails = value;
         }
 
+        [JsonProperty]
+        public Packaging packaging { get; set; }
+
         public string GetIdentificator()
         {
             return inventoryNumber;
