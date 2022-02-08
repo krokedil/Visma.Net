@@ -85,12 +85,18 @@ namespace ONIT.VismaNetApi
             GeneralLedgerBalance = new GeneralLedgerBalanceData(Auth);
             Account = new FinAccountData(Auth);
             Employee = new EmployeeData(Auth);
+#pragma warning disable CS0612 // Type or member is obsolete
             CreditNote = new CreditNoteData(Auth);
+#pragma warning restore CS0612 // Type or member is obsolete
             Shipment = new ShipmentData(Auth);
             Contact = new ContactData(Auth);
             Project = new ProjectData(Auth);
             SalesOrder = new SalesOrderData(Auth);
+#pragma warning disable CS0618 // Type or member is obsolete
+#pragma warning disable CS0612 // Type or member is obsolete
             Payment = new PaymentData(Auth);
+#pragma warning restore CS0612 // Type or member is obsolete
+#pragma warning restore CS0618 // Type or member is obsolete
             Branch = new BranchData(Auth);
             Warehouse = new WarehouseData(Auth);
             Location = new LocationData(Auth);
