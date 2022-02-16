@@ -18,7 +18,7 @@ namespace ONIT.VismaNetApi.Models
         public string applicationPeriod { get => Get<string>(); set => Set(value); }
         public string paymentRef { get => Get<string>(); set => Set(value); }
         public CustomerSummary customer { get => Get<CustomerSummary>(); set => Set(value); }
-        public LocationSummary location { get => Get<LocationSummary>(); set => Set(value); }
+        //public LocationSummary location { get => Get<LocationSummary>(); set => Set(value); }
         public PaymentMethod paymentMethod { get => Get<PaymentMethod>(); set => Set(value); }
         public string cashAccount { get => Get<string>(); set => Set(value); }
         public string currency { get => Get<string>(); set => Set(value); }
@@ -49,7 +49,7 @@ namespace ONIT.VismaNetApi.Models
         public List<CustomerPaymentOrderToApply> ordersToApply
         {
             get => Get(defaultValue: new List<CustomerPaymentOrderToApply>());
-            private set => Set(value);
+            set => Set(value);
         }
         [JsonProperty]
         public JObject extras { get; private set; }

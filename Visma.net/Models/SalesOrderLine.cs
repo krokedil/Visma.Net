@@ -153,12 +153,12 @@ namespace ONIT.VismaNetApi.Models
             set => Set(value);
         }
 
-        [JsonProperty]
+        /*[JsonProperty]
         public int projectTask
         {
             get => int.TryParse(Get<string>(), out var value) ? value : 0;
             set => Set(value.ToString());
-        }
+        }*/
 
         [JsonProperty]
         public double qtyOnShipments

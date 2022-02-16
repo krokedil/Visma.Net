@@ -166,11 +166,11 @@ namespace ONIT.VismaNetApi.Models
             private set => Set(value);
         }
 
-        public LocationSummary location
+        /*public LocationSummary location
         {
             get => Get(defaultValue: new LocationSummary());
             set => Set(value);
-        }
+        }*/
 
         public string note
         {
